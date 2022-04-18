@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&family=Roboto&family=Sora&display=swap');
+
+:root {
+    --primary:#3a8878;
+}
+
+body {
+    font-family: "dosis", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+a {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+.navbar .logo {
+    width: 65px;
+}
+
+#hero {
+    background-image: url(../img/dwinata-cropped.jpeg);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hero h1 {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.overlay {
+    position: relative;
+    z-index: 2;
+}
+
+.overlay::after {
+    content:"";
+    width:100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(36, 44, 48, 0.6);
+    z-index: -1;
+}
+
+.btn {
+    padding: 14px 32px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: 600;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color: #3a8878;
+    border-color: #3a8878;
+    border-radius: 100px;
+}
+
+.btn-primary:hover {
+    background-color: #4ab23f;
+    border-color: #4ab23f;
+}
+
+.navbar {
+    transition: 0.4s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #4ab23f;
+}
+
+
+ .bi {
+    line-height: 1;
+ }
+ 
+
+.intro {
+    margin-bottom: 50px;
+}
+.intro .divider {
+    background-color: #3a8878;
+    height: 2px;
+    width: 120px;
+    margin: 18px auto;
+}
+
+/** Visi&Misi **/
+
+#reviews {
+    background-image: url(../img/Vision.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.review {
+    max-width: 800px;
+    margin: auto;
+    padding: 25px;
+}
+
+.review .quote {
+    font-size: 54px;
+    color: #4ab23f;
+}
+
+.icon-box {
+    width: 80px;
+    height: 80px;
+    background-color: #4ab23f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 0 auto 24px auto;
+    color: #fff;
+}
+
+.icon-box i {
+    font-size: 34px;
+}
+
+.containers .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+   
+   .containers .box .dream{
+     display: flex;
+     flex-direction: column;
+     width: 25%;
+   }
+   
+   .containers .box .dream img{
+     width: 100%;
+     padding-bottom: 15px;
+     border-radius: 5px;
+   }
+   
+   .containers .btn{
+     margin: 40px 0 70px 0;
+     background: #222;
+     padding: 15px 40px ;
+     border-radius: 5px;
+   }
+   
+   .containers .btn a{
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+   }
+   
+   @media only screen and (max-width: 769px){
+       .container .box{
+      flex-direction: column;
+     }
+   
+   .container .box .dream{
+     width: 100%;
+   }
+   }   
